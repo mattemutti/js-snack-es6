@@ -49,12 +49,16 @@ const persons = [
 
 
 
- const adults = persons.filter((numero) => {
+ const adults = persons.map((numero) => {
 	if (numero.eta >= 18) {
-		return console.log(`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perche sono maggiorenne, ho ${numero.eta} anni.`);
+		return (`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perché sono maggiorenne, ho ${numero.eta} anni.`)
+		//console.log(`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perche sono maggiorenne, ho ${numero.eta} anni.`);
 		//return adults.push(`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perche sono maggiorenne, ho ${numero.eta} anni.`);
 	}
-	return false
+	return (`Ciao io sono ${numero.nome} ${numero.cognome} e non posso guidare perché sono minorenne, ho ${numero.eta} anni.`)
+	
 })
 
+
 console.log(adults);
+//console.log(`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perche sono maggiorenne, ho ${numero.eta} anni.`);
