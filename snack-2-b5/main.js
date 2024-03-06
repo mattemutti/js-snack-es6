@@ -98,5 +98,5 @@ zucchineSmall.forEach(zucchina => {
 	
 })
 
-console.log(pesoZucchineBig);
-console.log(pesoZucchineSmall);
+console.log(`Le zucchine più lunghe di 15 cm pesano ${pesoZucchineBig}`);
+console.log(`Le zucchine più corte di 15 cm pesano ${pesoZucchineSmall}`);
