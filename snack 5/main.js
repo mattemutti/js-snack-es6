@@ -56,26 +56,24 @@ console.log(bicycles);
 // Stampare in console la bici con peso minore utilizzando destructuring e template literal
 
 let biciLighter = bicycles[0].peso;
-let biciName;
+let nameBike;
 
 
-
-const bikeLight = bicycles.forEach(bike => {
+bicycles.forEach(bike => {
 	
 	//console.log(bikeLighter);
-	let {name, peso} = bicycles
+	let {nome, peso} = bike
 
 	if (peso < biciLighter){
-		biciLighter = peso
-		biciName = name;
+		biciLighter = peso;
+		nameBike = nome;
 	
-		
 	}
 })
 
 
-console.log(bikeLight);
-console.log(`La bici ${biciName} è qualle ceh pesa meno : ${biciLighter}`);
+
+console.log(`La bici ${nameBike} è qualla che pesa meno : ${biciLighter}`);
 
 
 
