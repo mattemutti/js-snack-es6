@@ -18,3 +18,12 @@ function reverseString(string) {
 
 
 reverseString("giovanotto");
+
+
+// funzione più compatta
+
+function reverseStringCompact(word){
+
+	const wordRev = word.split('').reverse().join('')
+
+}
