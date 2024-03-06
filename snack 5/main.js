@@ -72,7 +72,6 @@ bicycles.forEach(bike => {
 })
 
 
-
 console.log(`La bici ${nameBike} è qualla che pesa meno : ${biciLighter}`);
 
 
