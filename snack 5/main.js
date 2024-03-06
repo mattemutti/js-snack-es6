@@ -55,22 +55,33 @@ console.log(bicycles);
 
 // Stampare in console la bici con peso minore utilizzando destructuring e template literal
 
-let bikeLighter = bicycles[0].peso
-console.log(bikeLighter);
+let [{peso}] = bicycles
+console.log(peso);
+
+
+
 
 
 const bikeLight = bicycles.filter((bike) => {
 	
-	console.log(bikeLighter);
+	//console.log(bikeLighter);
 	
-	if (bike.peso < bikeLighter){
-		bikeLighter = bike.peso
+	if (peso > bike.peso){
+		peso = bike.peso
 		
 		return bike 
+		console.log(bike);
 	}
 })
 
+
+
+
+
+
+
 console.log(bikeLight);
+console.log(`La bici ${bikeLight[1].nome} è qualle ceh pesa meno : ${bikeLight[1].peso}`);
 
 
 
