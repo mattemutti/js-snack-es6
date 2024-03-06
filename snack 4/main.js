@@ -51,12 +51,12 @@ const persons = [
 
  const adults = persons.map((person) => {
 	if (person.eta >= 18) {
-		persons.canDrive = `${person.nome} ${person.cognome} può guidare`;
+		person.canDrive = `${person.nome} ${person.cognome} può guidare`;
 		//console.log(`Ciao io sono ${person.nome} ${person.cognome} e posso guidare perche sono maggiorenne, ho ${person.eta} anni.`);
 		//return adults.push(`Ciao io sono ${person.nome} ${person.cognome} e posso guidare perche sono maggiorenne, ho ${person.eta} anni.`);
 	} else {
 
-		persons.canDrive = `${person.nome} ${person.cognome} non può guidare`
+		person.canDrive = `${person.nome} ${person.cognome} non può guidare`
 	}
 	return persons
 	
