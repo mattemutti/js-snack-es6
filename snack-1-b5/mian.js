@@ -59,10 +59,23 @@ const zucchine = [
 
 // Calcola quanto pesano tutte le zucchine.
 
+
+
 let pesoZucchina = 0
 zucchine.forEach(zucchina => {
 	pesoZucchina = zucchina.peso + pesoZucchina
 	
+	// pesoZucchina += zucchina.peso 	// si può scrivere anche così
+	
 })
+
+
+
+// versione più stretta:
+/*
+
+zucchine.forEach(zucchina => pesoZucchina += zucchine.peso)
+
+*/
 
 console.log(`Il peso di tutte le zucchine è: ${pesoZucchina}`);
