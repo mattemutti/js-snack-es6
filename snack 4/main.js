@@ -49,16 +49,19 @@ const persons = [
 
 
 
- const adults = persons.map((numero) => {
-	if (numero.eta >= 18) {
-		return (`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perché sono maggiorenne, ho ${numero.eta} anni.`)
-		//console.log(`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perche sono maggiorenne, ho ${numero.eta} anni.`);
-		//return adults.push(`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perche sono maggiorenne, ho ${numero.eta} anni.`);
+ const adults = persons.map((person) => {
+	if (person.eta >= 18) {
+		persons.canDrive = `${person.nome} ${person.cognome} può guidare`;
+		//console.log(`Ciao io sono ${person.nome} ${person.cognome} e posso guidare perche sono maggiorenne, ho ${person.eta} anni.`);
+		//return adults.push(`Ciao io sono ${person.nome} ${person.cognome} e posso guidare perche sono maggiorenne, ho ${person.eta} anni.`);
+	} else {
+
+		persons.canDrive = `${person.nome} ${person.cognome} non può guidare`
 	}
-	return (`Ciao io sono ${numero.nome} ${numero.cognome} e non posso guidare perché sono minorenne, ho ${numero.eta} anni.`)
+	return persons
 	
 })
 
 
-console.log(adults);
-//console.log(`Ciao io sono ${numero.nome} ${numero.cognome} e posso guidare perche sono maggiorenne, ho ${numero.eta} anni.`);
+console.log(persons);
+//console.log(`Ciao io sono ${person.nome} ${person.cognome} e posso guidare perche sono maggiorenne, ho ${numero.eta} anni.`);
