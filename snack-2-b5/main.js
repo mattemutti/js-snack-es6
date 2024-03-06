@@ -63,7 +63,7 @@ const zucchine = [
 
 console.log(zucchine);
 
-
+// filtro le zucchine maggiori di 15 cm in un array
 const zucchineBig = zucchine.filter((zucchina) => {
 	if ( zucchina.peso >= 15){
 		return zucchina
@@ -72,6 +72,8 @@ const zucchineBig = zucchine.filter((zucchina) => {
 
 console.log(zucchineBig);
 
+
+// filtro le zucchine minori di 15 cm in un altro array
 const zucchineSmall = zucchine.filter((zucchina) => {
 	if (zucchina.peso < 15){
 		return zucchina
@@ -81,22 +83,24 @@ const zucchineSmall = zucchine.filter((zucchina) => {
 console.log(zucchineSmall);
 
 
+// inizializzo le variabili per il conteggio
 let pesoZucchineBig = 0
 let pesoZucchineSmall = 0
 
+
+// calcolo il peso delle zucchine maggiori di 15
 zucchineBig.forEach(zucchina => {
 	pesoZucchineBig = zucchina.peso + pesoZucchineBig
 	
-	// pesoZucchina += zucchina.peso 	// si può scrivere anche così
-	
 })
 
+// calcolo il peso delle zucchine minori di 15
 zucchineSmall.forEach(zucchina => {
 	pesoZucchineSmall = zucchina.peso + pesoZucchineSmall
 	
-	// pesoZucchina += zucchina.peso 	// si può scrivere anche così
-	
 })
 
+
+// mando in console il risultato
 console.log(`Le zucchine più lunghe di 15 cm pesano ${pesoZucchineBig}`);
 console.log(`Le zucchine più corte di 15 cm pesano ${pesoZucchineSmall}`);
